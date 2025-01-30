@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'djoser',
     'rest_framework',
     'corsheaders',
+    'Utilisateur',
 ]
 
 MIDDLEWARE = [
