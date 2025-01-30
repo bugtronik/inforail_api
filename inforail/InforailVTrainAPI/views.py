@@ -8,12 +8,11 @@ from django.core.paginator import Paginator, EmptyPage
 def trains(request):
     
     trains = SpErametVtrainMini.objects.raw(
-        """SELECT
-                  *
-            FROM [tcs].[SP_ERAMET_VTRAIN_MINI]
+        """SELECT *
+            FROM [tcs].[SP_ERAMET_VTRAIN_MINI_V2]
             WHERE CATEGORIE_TRAIN IN ('Voyageurs express', 'Voyageurs omnibus')
             AND FORMAT(REAL_DT_TO, 'yyyy-MM-dd') BETWEEN '2024-12-01' AND '2024-12-31'
-            """
+        """
     )
     perpage = request.query_params.get('perpage', default=20)
     page = request.query_params.get('page', default=1)
