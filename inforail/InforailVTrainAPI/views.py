@@ -9,9 +9,9 @@ def trains(request):
     
     trains = SpErametVtrainMini.objects.raw(
         """SELECT *
-            FROM [tcs].[SP_ERAMET_VTRAIN_MINI_V2]
+            FROM [tcs].[SP_ERAMET_VTRAIN_MINI]
             WHERE CATEGORIE_TRAIN IN ('Voyageurs express', 'Voyageurs omnibus')
-            AND FORMAT(REAL_DT_TO, 'yyyy-MM-dd') BETWEEN '2024-12-01' AND '2024-12-31'
+            AND FORMAT(REAL_DT_TO, 'yyyy-MM-dd') BETWEEN '2024-12-28' AND '2024-12-29'
         """
     )
     perpage = request.query_params.get('perpage', default=20)

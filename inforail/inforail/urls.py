@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('InforailVTrainAPI.urls')),
+    path('api/', include('Utilisateur.urls')),
 ]
