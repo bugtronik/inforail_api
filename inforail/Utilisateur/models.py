@@ -41,3 +41,6 @@ class AuthProfiles(models.Model):
     class Meta:
         managed = False
         db_table = 'auth_profiles'
+        
+    def __str__(self)-> str:
+        return self.name

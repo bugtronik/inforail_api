@@ -84,8 +84,8 @@ DATABASES = {
         'ENGINE': 'mssql',
         'NAME': 'mavaghasqld',
         'USER': 'SicomAdminUser',
-        'PASSWORD': 'MUdNRsrTl6eF5KjzlVcr',
-        'HOST': 'mavagha-dv1-sqls.database.windows.net',
+        'PASSWORD': '8hUmAyTuzvpGpPqWvdv9sywXe9M6MFJm',
+        'HOST': 'mavagha-prd-sqls.database.windows.net',
         'OPTIONS': {
             'driver': 'ODBC Driver 18 for SQL Server',
         }
