@@ -87,7 +87,7 @@ DATABASES = {
         'PASSWORD': '8hUmAyTuzvpGpPqWvdv9sywXe9M6MFJm',
         'HOST': 'mavagha-prd-sqls.database.windows.net',
         'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
+            'driver': 'ODBC Driver 18 for SQL Server',
         }
     }
 }
